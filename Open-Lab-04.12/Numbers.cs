@@ -7,10 +7,8 @@ namespace Open_Lab_04._12
     {
         public int MissingNum(int[] nums)
         {
-            nums.ToList();
-            var list = nums;
             var result = Enumerable.Range(0, 10).Except(nums);
-            return result;
+            return result.ToList()[0];
             
         }
         
